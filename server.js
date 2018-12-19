@@ -14,7 +14,7 @@ if (process.env.NODE_ENV === "production") {
 
 // Setting MONGODB_URI for deployment to Heroku
 // If one does not exist, use localhost instead
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/improvements";
+const MONGODB_URI = "mongodb://heroku_xkwfmhm3:h59pbigtf6m5ja8r7r67i8f07o@ds139534.mlab.com:39534/heroku_xkwfmhm3" || "mongodb://localhost/improvements";
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
